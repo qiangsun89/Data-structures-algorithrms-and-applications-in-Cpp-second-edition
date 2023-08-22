@@ -1,7 +1,7 @@
 // recursive sum of n numbers
 
 #include <iostream>
-#include<algorithm> // has copy
+#include <algorithm> // has copy
 #include <iterator>
 using namespace std;
 
@@ -12,7 +12,8 @@ T rSum(T a[], int n)
       return rSum(a, n-1) + a[n-1];
    return 0;
 }
-void main(void)
+
+int main(void)
 {
    int a[6] = {1, 2, 3, 4, 5, 6};
 
