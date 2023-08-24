@@ -7,7 +7,7 @@ using namespace std;
 
 
 template<class T>
-void rank(T a[], int n, int r[])
+void compute_rank(T a[], int n, int r[])
 {// Rank the n elements a[0:n-1].
  // Element ranks returned in r[0:n-1]
    for (int i = 0; i < n; i++)
@@ -31,7 +31,7 @@ int main()
    cout << endl;
 
    // determine the ranks
-   rank(a,6,r);
+   compute_rank(a,6,r);
 
    // output the ranks
    cout << "r[0:5] = ";
